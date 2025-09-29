@@ -1,0 +1,9 @@
+This algorithm relies on a dynamic Flood-Fill algorithm that gets re-calculated each time the robot fails to advance towards the least cost cell (due to a wall), and you can see the numbers on the map change dynamically when that happens based on new wall data.
+
+The algorithm's result stabilises after 3-5 iterations on the shortest path it has found, and the robot's path is more or less close to the best possible one within the first 3, which is good enough as far as we're concerned.
+
+Additionally, the slower the mouse in completing the maze in the first few times, the more walls and dead-ends discovered, which means the next iterations will be more informed and quicker automatically.
+
+While exploring the entire map would guarantee the shortest path by the second iteration, it's more error prone and could cause problems if something is logged incorrectly, it's best that we try to reach the goal as quickly as possible from the beginning and minimise bad runs till we can guarantee consistency for the robot.
+
+

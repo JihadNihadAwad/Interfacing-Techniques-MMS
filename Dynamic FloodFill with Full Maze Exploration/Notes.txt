@@ -1,0 +1,7 @@
+This algorithm makes use of the dynamic FloodFill algorithm we have implemented earlier, but instead of going to the goal directly, uses it to explore the entire map reliably, quickly and most intelligently, to then find the shortest possible path.
+
+The advantage this has over the other approach is that by the second iteration the shortest path would be known and the robot could try to set records following it, rather than take 3-5 iterations to find the best one.
+
+This more time-consuming and computationally expensive the first time, also more error-prone for the robot itself, but allows us to use the full maze to compute the best paths for the robot as we wish
+
+
